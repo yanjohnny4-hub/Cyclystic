@@ -1,9 +1,7 @@
 # Cyclystic
 ## Overview
-Paragraph 1
 Cyclystic is a fictional bike-share company located in Chicago. Cyclystic offers single-ride passes, full-day passes, and annual membership. Customers who purchase single-ride or full-day passes are considered casual riders, while those who own an annual membership are considered Cyclistic members. The company's financial analysts have determined that annual members are much more profitable compared to casual riders. 
 
-Paragraph 2
 In this scenario, I am a data analyst working on the marketing analyst team at the company. Lily Moreno, the director of marketing and my manager, believes that maximizing the number of annual members is the key to future growth; rather than creating a marketing campaign that targets new customers, she believes the company should instead focus on converting casual riders to members.
 
 ## Stakeholders
@@ -20,9 +18,9 @@ My business task was to create marketing strategies designed to convert casual r
 * How can Cyclystic use digital media to influence casual riders to become members?
 
 ## Perparing the data
-I downloaded 11 months worth of historic trip data from [this database](https://divvy-tripdata.s3.amazonaws.com/index.html).
+I downloaded 11 months worth of historic trip data from [the Divvy tripdata database](https://divvy-tripdata.s3.amazonaws.com/index.html).
 I obtained data from July 2025 to June 2026. Next, I uploaded them into Google BigQuery and merged them with the query titled "merge_12_months," storing the query into a table titled "all_trips."
-![A code snippet of "merge_12_months"](Cyclystic/images/Screenshot 2026-09-29 101812.png)
+<img width="778" height="628" alt="Screenshot 2026-09-29 101812" src="https://github.com/user-attachments/assets/ac4fd094-97b9-48eb-b1c1-eac14829080b" />
 After reviewing the table, I noticed there was missing and duplicate data. I used the query "filtering_bikes" to remove any duplicate or null values. 
 ```
 SELECT
@@ -75,7 +73,6 @@ I saved the data obtained from "filtering_bikes" with the extracted hour and mon
 To find how casual riders differed from annual members, I queried "final_bikedata" to find the average trip duration of casual riders and members. I also looked at the average hour and month each group rode in, as well as the their top 3 most common days. All of this is done in the query titled "analysis."
 I also extracted the starting location of the ride, aggregating the location's name by count. This is done in the query called "start_station_count."
 
-Paragraph 2
 Next, I looked for seasonal differences between the two groups. For my analysis, winter is designated as months 12, 1, and 2, spring as months 3, 4, and 5, summer as months 6, 7, and 8, and fall as 9, 10, and 11. The SELECT statement has the same body as my main analysis, however I included a new WHERE clause to filter out the months.
 
 ### Findings
@@ -91,11 +88,11 @@ Next, I looked for seasonal differences between the two groups. For my analysis,
 I created a Google Slides presentation to share my findings, which can be found in the folder titled "slides."
 Key Findings include:
 * Casual riders prefer to ride over the weekends
-  ![A chart comparing days of the week of casual riders and members](Cyclystic/images/Screenshot 2026-09-29 105011.png)
+<img width="1840" height="1172" alt="Screenshot 2026-09-29 105011" src="https://github.com/user-attachments/assets/87f4e088-093c-40ec-a8cd-e7f5141d0c6f" />
 * Casual riders ride longer on average
-  ![A chart comparing the average ride duration of casual riders and members](Cyclystic/images/Screenshot 2026-09-29 105018.png)
+<img width="1862" height="1146" alt="Screenshot 2026-09-29 105018" src="https://github.com/user-attachments/assets/c0e8492e-d1fc-4b44-9d4e-14024643fa67" />
 * Casual riders ride near the shore and other recreational areas
-  ![A map of the most common starting locations of casual riders](Cyclystic/images/Screenshot 2026-09-29 105032.png)
+<img width="1780" height="1354" alt="Screenshot 2026-09-29 105032" src="https://github.com/user-attachments/assets/c3c1bf29-cdaa-485c-b46c-2eeebe2a7729" />
 
 *I generated these graphs using by inputting my SQL analyses into Google Sheets. For more information, please view the folder titled "sheets."*
 
