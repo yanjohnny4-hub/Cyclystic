@@ -1,4 +1,4 @@
-# Cyclystic
+# Cyclystic Case Study
 ## Overview
 Cyclystic is a fictional bike-share company located in Chicago. Cyclystic offers single-ride passes, full-day passes, and annual membership. Customers who purchase single-ride or full-day passes are considered casual riders, while those who own an annual membership are considered Cyclistic members. The company's financial analysts have determined that annual members are much more profitable compared to casual riders. 
 
@@ -17,7 +17,7 @@ My business task was to create marketing strategies designed to convert casual r
 * Why would casual members buy Cyclistic annual memberships?
 * How can Cyclystic use digital media to influence casual riders to become members?
 
-## Perparing the data
+## Preparing the data
 I downloaded 11 months worth of historic trip data from [the Divvy tripdata database](https://divvy-tripdata.s3.amazonaws.com/index.html).
 I obtained data from July 2025 to June 2026. Next, I uploaded them into Google BigQuery and merged them with the query titled "merge_12_months," storing the query into a table titled "all_trips."
 
@@ -90,14 +90,14 @@ Next, I looked for seasonal differences between the two groups. For my analysis,
 I created a Google Slides presentation to share my findings, which can be found in the folder titled "slides."
 Key Findings include:
 
-# Casual riders prefer to ride over the weekends
+### Casual riders prefer to ride over the weekends
 
 <img width="800" height="550" alt="Screenshot 2026-09-29 105011" src="https://github.com/user-attachments/assets/87f4e088-093c-40ec-a8cd-e7f5141d0c6f" />
 
-# Casual riders ride longer on average
+### Casual riders ride longer on average
 <img width="800" height="550" alt="Screenshot 2026-09-29 105018" src="https://github.com/user-attachments/assets/c0e8492e-d1fc-4b44-9d4e-14024643fa67" />
 
-# Casual riders ride near the shore and other recreational areas
+### Casual riders ride near the shore and other recreational areas
 <img width="800" height="550" alt="Screenshot 2026-09-29 105032" src="https://github.com/user-attachments/assets/c3c1bf29-cdaa-485c-b46c-2eeebe2a7729" />
 
 *I generated these graphs using by inputting my SQL analyses into Google Sheets. For more information, please view the folder titled "sheets."*
