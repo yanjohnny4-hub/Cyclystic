@@ -22,7 +22,7 @@ My business task was to create marketing strategies designed to convert casual r
 ## Perparing the data
 I downloaded 11 months worth of historic trip data from [this database](https://divvy-tripdata.s3.amazonaws.com/index.html).
 I obtained data from July 2025 to June 2026. Next, I uploaded them into Google BigQuery and merged them with the query titled "merge_12_months," storing the query into a table titled "all_trips."
-![A code snippet of "merge_12_months"](https://ibb.co/JRCnDr4j)
+![A code snippet of "merge_12_months"](Cyclystic/images/Screenshot 2026-09-29 101812.png)
 After reviewing the table, I noticed there was missing and duplicate data. I used the query "filtering_bikes" to remove any duplicate or null values. 
 ```
 SELECT
@@ -91,11 +91,11 @@ Next, I looked for seasonal differences between the two groups. For my analysis,
 I created a Google Slides presentation to share my findings, which can be found in the folder titled "slides."
 Key Findings include:
 * Casual riders prefer to ride over the weekends
-  ![A chart comparing days of the week of casual riders and members](https://ibb.co/hRdv4PmM)
+  ![A chart comparing days of the week of casual riders and members](Cyclystic/images/Screenshot 2026-09-29 105011.png)
 * Casual riders ride longer on average
-  ![A chart comparing the average ride duration of casual riders and members](https://ibb.co/wZfMtLpf)
+  ![A chart comparing the average ride duration of casual riders and members](Cyclystic/images/Screenshot 2026-09-29 105018.png)
 * Casual riders ride near the shore and other recreational areas
-  ![A map of the most common starting locations of casual riders](https://ibb.co/C5crFPcG)
+  ![A map of the most common starting locations of casual riders](Cyclystic/images/Screenshot 2026-09-29 105032.png)
 
 *I generated these graphs using by inputting my SQL analyses into Google Sheets. For more information, please view the folder titled "sheets."*
 
