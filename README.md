@@ -20,7 +20,9 @@ My business task was to create marketing strategies designed to convert casual r
 ## Perparing the data
 I downloaded 11 months worth of historic trip data from [the Divvy tripdata database](https://divvy-tripdata.s3.amazonaws.com/index.html).
 I obtained data from July 2025 to June 2026. Next, I uploaded them into Google BigQuery and merged them with the query titled "merge_12_months," storing the query into a table titled "all_trips."
-<img width="778" height="628" alt="Screenshot 2026-09-29 101812" src="https://github.com/user-attachments/assets/ac4fd094-97b9-48eb-b1c1-eac14829080b" />
+
+<img width="600" height="500" alt="Screenshot 2026-09-29 101812" src="https://github.com/user-attachments/assets/ac4fd094-97b9-48eb-b1c1-eac14829080b" />
+
 After reviewing the table, I noticed there was missing and duplicate data. I used the query "filtering_bikes" to remove any duplicate or null values. 
 ```
 SELECT
@@ -87,12 +89,12 @@ Next, I looked for seasonal differences between the two groups. For my analysis,
 # Sharing my findings
 I created a Google Slides presentation to share my findings, which can be found in the folder titled "slides."
 Key Findings include:
-* Casual riders prefer to ride over the weekends
-<img width="1840" height="1172" alt="Screenshot 2026-09-29 105011" src="https://github.com/user-attachments/assets/87f4e088-093c-40ec-a8cd-e7f5141d0c6f" />
-* Casual riders ride longer on average
-<img width="1862" height="1146" alt="Screenshot 2026-09-29 105018" src="https://github.com/user-attachments/assets/c0e8492e-d1fc-4b44-9d4e-14024643fa67" />
-* Casual riders ride near the shore and other recreational areas
-<img width="1780" height="1354" alt="Screenshot 2026-09-29 105032" src="https://github.com/user-attachments/assets/c3c1bf29-cdaa-485c-b46c-2eeebe2a7729" />
+#Casual riders prefer to ride over the weekends
+<img width="800" height="550" alt="Screenshot 2026-09-29 105011" src="https://github.com/user-attachments/assets/87f4e088-093c-40ec-a8cd-e7f5141d0c6f" />
+#Casual riders ride longer on average
+<img width="800" height="550" alt="Screenshot 2026-09-29 105018" src="https://github.com/user-attachments/assets/c0e8492e-d1fc-4b44-9d4e-14024643fa67" />
+#Casual riders ride near the shore and other recreational areas
+<img width="800" height="550" alt="Screenshot 2026-09-29 105032" src="https://github.com/user-attachments/assets/c3c1bf29-cdaa-485c-b46c-2eeebe2a7729" />
 
 *I generated these graphs using by inputting my SQL analyses into Google Sheets. For more information, please view the folder titled "sheets."*
 
