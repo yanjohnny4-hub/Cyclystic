@@ -104,5 +104,8 @@ I proposed the following recommendations:
 * Geo-target ads near beaches, piers, and parks
 * Advertise the convenience and flexibility of membership
 * Promote health benefits of rides along scenic routes
+### Final Recommendation
+Frame membership as a way for casual riders to get more out of the recreational riding they already do
 
-
+# Author
+My name is Cai Xin (Johnny) Yan and I created this case study to refine my skills as a data analyst and a presenter. To add my opinion, I enjoyed every step of the process to create this case study. It felt really amazing to see all of the pieces fall into place as I was analyzing the data -- how I could see patterns between casual riders and members and how exactly each group differed.
