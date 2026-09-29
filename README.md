@@ -89,10 +89,14 @@ Next, I looked for seasonal differences between the two groups. For my analysis,
 # Sharing my findings
 I created a Google Slides presentation to share my findings, which can be found in the folder titled "slides."
 Key Findings include:
+
 # Casual riders prefer to ride over the weekends
+
 <img width="800" height="550" alt="Screenshot 2026-09-29 105011" src="https://github.com/user-attachments/assets/87f4e088-093c-40ec-a8cd-e7f5141d0c6f" />
+
 # Casual riders ride longer on average
 <img width="800" height="550" alt="Screenshot 2026-09-29 105018" src="https://github.com/user-attachments/assets/c0e8492e-d1fc-4b44-9d4e-14024643fa67" />
+
 # Casual riders ride near the shore and other recreational areas
 <img width="800" height="550" alt="Screenshot 2026-09-29 105032" src="https://github.com/user-attachments/assets/c3c1bf29-cdaa-485c-b46c-2eeebe2a7729" />
 
